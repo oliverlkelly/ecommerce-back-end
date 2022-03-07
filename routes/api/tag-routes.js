@@ -71,7 +71,7 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   }).then(tdata => {
-      if(!tdata){
+      if(!tdata[0]){
         res.status(404).json({message: 'This id does not match any tags.'});
         return;
       }else{

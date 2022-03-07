@@ -71,7 +71,7 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   }).then(cdata => {
-      if(!cdata){
+      if(!cdata[0]){
         res.status(404).json({message: 'This id does not match any categories.'});
         return;
       }else{
