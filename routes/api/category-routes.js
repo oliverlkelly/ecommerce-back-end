@@ -52,7 +52,7 @@ router.get('/:id', (req, res) => {
         console.log(err);
         res.status(500).json(err);
       }
-    )
+    );
 });
 
 router.post('/', (req, res) => {
@@ -81,7 +81,7 @@ router.put('/:id', (req, res) => {
         console.log(err);
         res.status(500).json(err);
       }
-    )
+    );
 });
 
 router.delete('/:id', (req, res) => {
@@ -100,7 +100,7 @@ router.delete('/:id', (req, res) => {
         console.log(err);
         res.status(500).json(err);
       }
-    )
+    );
 });
 
 module.exports = router;
