@@ -31,7 +31,7 @@ router.get('/', (req, res) => {
 
 // get one product
 router.get('/:id', (req, res) => {
-  Category.findOne({
+  Product.findOne({
     where: {
       id: req.params.id
     },
